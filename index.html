@@ -1,0 +1,35 @@
+---
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fix OCR - NYC Space/Time Directory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="{{ site.brick-by-brick-js }}style.css">
+    <script src="{{ site.brick-by-brick-js }}fetch.js"></script>
+    <script src="{{ site.brick-by-brick-js }}promise.min.js"></script>
+    <script src="{{ site.brick-by-brick-js }}d3.v4.min.js"></script>
+    <script src="{{ site.brick-by-brick-js }}brick-by-brick.js"></script>
+  </head>
+  <body>
+    <div id="oauth">
+    </div>
+    <h1>📄 Fix &amp; Train OCR 🏋</h1>
+    <div class="center text">
+
+    </div>
+    <div class="center error" id="error"></div>
+    <article class="hidden">
+      <canvas id="canvas" width="800" height="200"></canvas>
+      <a id="full-png" target="_blank">View full PNG</a>
+      <form id="form" spellcheck="false">
+        <input id="ocr-text" type="text" tabindex="0"></input>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </article>
+    <script src="js/script.js"></script>
+  </body>
+</html>
